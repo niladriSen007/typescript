@@ -56,3 +56,6 @@ type userType = {
 const userObjFunc = (user:userType) =>{
     return user.name;
 }
+const userObjFuncNew = (user:userType) =>{
+    return user.age;
+}
