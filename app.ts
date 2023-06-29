@@ -62,3 +62,57 @@ const userObjFunc = (user:userType) =>{
     return user.name;
 }
 
+//Interface
+
+interface userTypeNew{
+  name: string;
+  age: number;
+  phone?: string;
+}
+
+interface objUser extends userTypeNew{
+  address?:string
+}
+
+const newObjUser :objUser = {
+  name:"Niladri",
+  age:20,
+}
+
+//GENERICS  
+
+interface genericsUser{
+  id:number,
+  title:string,
+  extra: string[] | number[]
+}
+
+interface genericsUserTtype<T>{
+  id:number,
+  title:string,
+  extra: T[]
+}
+
+const genericsUserObj : genericsUserTtype<string>={
+  id:1,
+  title:"Niladri",
+  extra:["Niladri","Niladri"]
+}
+
+interface i{
+  id:number
+}
+interface genType<T>{
+  name:string,
+  extra:T[]
+} 
+
+const o:genType<i> = {
+  name:"Niladri",
+  extra:[{id:1}]
+}
+
+
+
+
+
