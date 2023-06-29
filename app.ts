@@ -41,6 +41,11 @@ const takeArgsreturnArgs = (myAge: number): number => {
   return myAge;
 };
 
+
+const takeArgsreturnArgsParamsOptional = (myAge: number,myName?:string): number => {
+  return myAge;
+};
+
 const takeArgsreturnArgsVoid = (myAge: number): void => {};
 
 const objFunc = (user: { name: string; age: number }): string => {
@@ -56,10 +61,4 @@ type userType = {
 const userObjFunc = (user:userType) =>{
     return user.name;
 }
-const userObjFuncNew = (user:userType) =>{
-    return user.age;
-}
 
-const userObjFuncNewOne = (user:userType) =>{
-    return user.phone;
-}
