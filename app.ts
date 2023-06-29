@@ -59,3 +59,7 @@ const userObjFunc = (user:userType) =>{
 const userObjFuncNew = (user:userType) =>{
     return user.age;
 }
+
+const userObjFuncNewOne = (user:userType) =>{
+    return user.phone;
+}
